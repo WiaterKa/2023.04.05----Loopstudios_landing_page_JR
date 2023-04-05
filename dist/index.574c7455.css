@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.content-wrapper {
+  padding-inline: 16.5rem;
+}
+
+.section-hero {
+  min-height: 65rem;
+  background-image: url("image-hero.736f3354.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-inline: 16.5rem;
+  position: relative;
+}
+
+.section-hero nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 13rem;
+  display: flex;
+}
+
+.section-hero nav ul {
+  flex-direction: row;
+  gap: 3.2rem;
+  list-style: none;
+  display: flex;
+}
+
+.section-hero nav ul a {
+  color: #fff;
+  font-family: Alata;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.section-hero nav .hamburger-svg {
+  display: none;
+}
+
+.section-hero .h1-hero {
+  width: 60rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4rem;
+  font-family: Josefin Sans;
+  font-size: 7.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7rem;
+  position: absolute;
+}
+
+.section-article {
+  padding-top: 16rem;
+  padding-bottom: 18.5rem;
+}
+
+.section-article .article-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-article .article-container .article-img-container {
+  z-index: -10;
+  width: 88.9rem;
+  height: 50rem;
+  position: relative;
+}
+
+.section-article .article-container .article-img-container .article-img {
+  object-fit: contain;
+  filter: hue-rotate(30deg);
+}
+
+.section-article .article-container .article-txt-box {
+  z-index: 10;
+  height: 31.7rem;
+  width: 54rem;
+  background-color: #fff;
+  padding-top: 9.6rem;
+  padding-left: 9.6rem;
+  position: absolute;
+  bottom: 0;
+  right: 4rem;
+}
+
+.section-article .article-container .article-txt-box .h2-primary {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Josefin Sans;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 4.8rem;
+}
+
+.section-article .article-container .article-txt-box .p-primary {
+  color: #000;
+  mix-blend-mode: normal;
+  opacity: .5;
+  padding-top: 2.5rem;
+  font-family: Alata;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+/*# sourceMappingURL=index.574c7455.css.map */

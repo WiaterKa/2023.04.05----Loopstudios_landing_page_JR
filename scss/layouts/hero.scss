@@ -1,0 +1,51 @@
+.section-hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 65rem;
+  padding-inline: 16.5rem;
+  position: relative;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 13rem;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 3.2rem;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-family: "Alata";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #ffffff;
+      }
+    }
+
+    .hamburger-svg {
+      display: none;
+    }
+  }
+
+  .h1-hero {
+    width: 60rem;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 7.2rem;
+    line-height: 7rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid white;
+    padding: 4rem;
+    position: absolute;
+  }
+}
