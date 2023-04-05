@@ -182,7 +182,7 @@ html {
 
 .section-grid .grid-box .grid:before {
   content: " ";
-  opacity: .3;
+  opacity: .6;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(#0000 0%, #0009 100%);
@@ -221,6 +221,74 @@ html {
 
 .section-grid .grid-box .gr8 {
   background-image: url("image-fisheye.a15da0c4.jpg");
+}
+
+.footer {
+  background-color: #000;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
+  display: flex;
+}
+
+.footer .logo-box {
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer .logo-box .footer-logo {
+  width: 14.4rem;
+  height: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer .logo-box ul {
+  color: #fff;
+  justify-content: space-between;
+  gap: 3.2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.footer .logo-box ul a {
+  color: #fff;
+  padding-top: 2.4rem;
+  font-family: Alata;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.footer .social-box {
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.footer .social-box .socials-container {
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+}
+
+.footer .social-box .p-secondary {
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: .5;
+  font-family: Alata;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
 }
 
 /*# sourceMappingURL=index.574c7455.css.map */
