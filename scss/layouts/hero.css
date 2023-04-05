@@ -30,6 +30,14 @@
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #ffffff;
+  position: relative;
+}
+
+.section-hero nav ul a:hover {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
+  border-radius: 3px;
+  color: white;
 }
 
 .section-hero nav .hamburger-svg {

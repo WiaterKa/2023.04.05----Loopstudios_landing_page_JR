@@ -40,6 +40,13 @@
   padding-top: 2.4rem;
 }
 
+.footer .logo-box ul a:hover {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
+  border-radius: 3px;
+  color: white;
+}
+
 .footer .social-box {
   display: flex;
   flex-direction: column;
@@ -53,6 +60,16 @@
   gap: 1.6rem;
   justify-content: space-between;
   margin-bottom: 2.4rem;
+}
+
+.footer .social-box .socials-container svg {
+  color: white;
+  cursor: pointer;
+}
+
+.footer .social-box .socials-container svg:hover {
+  color: #fff;
+  opacity: 0.5;
 }
 
 .footer .social-box .p-secondary {

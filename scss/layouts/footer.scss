@@ -35,6 +35,13 @@
         line-height: 2.5rem;
         color: #ffffff;
         padding-top: 2.4rem;
+
+        &:hover {
+          padding-bottom: 1rem;
+          border-bottom: 3px solid white;
+          border-radius: 3px;
+          color: white;
+        }
       }
     }
   }
@@ -51,6 +58,16 @@
       gap: 1.6rem;
       justify-content: space-between;
       margin-bottom: 2.4rem;
+
+      svg {
+        color: white;
+        cursor: pointer;
+      }
+
+      svg:hover {
+        color: #fff;
+        opacity: 0.5;
+      }
     }
 
     .p-secondary {
