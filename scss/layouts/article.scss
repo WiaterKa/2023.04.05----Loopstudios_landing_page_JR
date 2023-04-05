@@ -1,0 +1,58 @@
+.section-article {
+  padding-top: 16rem;
+  padding-bottom: 18.5rem;
+
+  .article-container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    .article-img-container {
+      position: relative;
+      z-index: -10;
+      width: 88.9rem;
+      height: 50rem;
+
+      .article-img {
+        object-fit: contain;
+        filter: hue-rotate(
+          30deg
+        ); // kolor do poprawienia + rozmiary do poprawienia
+      }
+    }
+
+    .article-txt-box {
+      padding-left: 9.6rem;
+      padding-top: 9.6rem;
+      z-index: 10;
+      height: 31.7rem;
+      width: 54rem;
+      background-color: white;
+      position: absolute;
+      right: 4rem;
+      bottom: 0rem;
+
+      .h2-primary {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        text-transform: uppercase;
+        color: #000000;
+      }
+
+      .p-primary {
+        font-family: "Alata";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #000000;
+        mix-blend-mode: normal;
+        padding-top: 2.5rem;
+        opacity: 0.5;
+      }
+    }
+  }
+}

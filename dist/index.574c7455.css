@@ -121,4 +121,106 @@ html {
   line-height: 2.5rem;
 }
 
+.section-grid .grid-nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.section-grid .grid-nav .h2-primary {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Josefin Sans;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 4.8rem;
+}
+
+.section-grid .grid-nav .btn {
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 1.3rem 4rem;
+  font-family: Alata;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  text-decoration: none;
+}
+
+.section-grid .grid-box {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 18rem;
+  display: flex;
+}
+
+.section-grid .grid-box .grid {
+  width: 25.6rem;
+  height: 45rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  align-items: flex-end;
+  padding-bottom: 3.2rem;
+  padding-left: 4rem;
+  font-family: Josefin Sans;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3.2rem;
+  display: flex;
+  position: relative;
+}
+
+.section-grid .grid-box .grid:before {
+  content: " ";
+  opacity: .3;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#0000 0%, #0009 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-grid .grid-box .gr1 {
+  background-image: url("image-deep-earth.0ca7b86b.jpg");
+}
+
+.section-grid .grid-box .gr2 {
+  background-image: url("image-night-arcade.5351f19b.jpg");
+}
+
+.section-grid .grid-box .gr3 {
+  background-image: url("image-soccer-team.0f53fa59.jpg");
+}
+
+.section-grid .grid-box .gr4 {
+  background-image: url("image-grid.7f44712a.jpg");
+}
+
+.section-grid .grid-box .gr5 {
+  background-image: url("image-from-above.78e60b6c.jpg");
+}
+
+.section-grid .grid-box .gr6 {
+  background-image: url("image-pocket-borealis.02f0c866.jpg");
+}
+
+.section-grid .grid-box .gr7 {
+  background-image: url("image-curiosity.7c51b99a.jpg");
+}
+
+.section-grid .grid-box .gr8 {
+  background-image: url("image-fisheye.a15da0c4.jpg");
+}
+
 /*# sourceMappingURL=index.574c7455.css.map */
