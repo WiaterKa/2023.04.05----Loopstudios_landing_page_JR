@@ -12,6 +12,12 @@ html {
   padding-inline: 16.5rem;
 }
 
+@media screen and (max-width: 930px) {
+  .content-wrapper {
+    padding-inline: 8rem;
+  }
+}
+
 .section-hero {
   min-height: 65rem;
   background-image: url("image-hero.736f3354.jpg");
@@ -19,6 +25,12 @@ html {
   background-size: cover;
   padding-inline: 16.5rem;
   position: relative;
+}
+
+@media screen and (max-width: 930px) {
+  .section-hero {
+    padding-inline: 8rem;
+  }
 }
 
 .section-hero nav {
@@ -77,17 +89,37 @@ html {
   padding-bottom: 18.5rem;
 }
 
+@media screen and (max-width: 1150px) {
+  .section-article {
+    padding-bottom: 3rem;
+  }
+}
+
 .section-article .article-container {
   display: flex;
   position: relative;
   overflow: hidden;
 }
 
+@media screen and (max-width: 1150px) {
+  .section-article .article-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .section-article .article-container .article-img-container {
   z-index: -10;
   width: 88.9rem;
-  height: 50rem;
+  height: 100%;
   position: relative;
+}
+
+@media screen and (max-width: 1150px) {
+  .section-article .article-container .article-img-container {
+    width: auto;
+  }
 }
 
 .section-article .article-container .article-img-container .article-img {
@@ -105,6 +137,18 @@ html {
   position: absolute;
   bottom: 0;
   right: 4rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .section-article .article-container .article-txt-box {
+    height: auto;
+    width: auto;
+    text-align: center;
+    flex-direction: column;
+    padding: 9.6rem;
+    display: flex;
+    position: static;
+  }
 }
 
 .section-article .article-container .article-txt-box .h2-primary {
@@ -129,10 +173,24 @@ html {
   line-height: 2.5rem;
 }
 
+.section-grid {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .section-grid .grid-nav {
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+@media screen and (max-width: 710px) {
+  .section-grid .grid-nav {
+    justify-content: center;
+  }
 }
 
 .section-grid .grid-nav .h2-primary {
@@ -145,7 +203,14 @@ html {
   line-height: 4.8rem;
 }
 
-.section-grid .grid-nav .btn {
+@media screen and (max-width: 710px) {
+  .section-grid .grid-nav .h2-primary {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+
+.section-grid .grid-nav .btn-nav {
   letter-spacing: .5rem;
   text-transform: uppercase;
   color: #000;
@@ -161,9 +226,15 @@ html {
   transition: all .3s ease-in-out;
 }
 
-.section-grid .grid-nav .btn:hover {
+.section-grid .grid-nav .btn-nav:hover {
   color: #fff;
   background-color: #000;
+}
+
+@media screen and (max-width: 710px) {
+  .section-grid .grid-nav .btn-nav {
+    display: none;
+  }
 }
 
 .section-grid .grid-box {
@@ -173,6 +244,12 @@ html {
   padding-top: 8rem;
   padding-bottom: 18rem;
   display: flex;
+}
+
+@media screen and (max-width: 710px) {
+  .section-grid .grid-box {
+    padding-bottom: 3.4rem;
+  }
 }
 
 .section-grid .grid-box .grid {
@@ -193,6 +270,23 @@ html {
   transition: all .3s ease-in-out;
   display: flex;
   position: relative;
+}
+
+@media screen and (max-width: 710px) {
+  .section-grid .grid-box .grid {
+    width: 100%;
+    height: 24rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-grid .grid-box .grid {
+    height: 12rem;
+  }
 }
 
 .section-grid .grid-box .grid:before {
@@ -229,6 +323,7 @@ html {
 
 .section-grid .grid-box .gr3 {
   background-image: url("image-soccer-team.0f53fa59.jpg");
+  background-position: top;
 }
 
 .section-grid .grid-box .gr4 {
@@ -251,13 +346,57 @@ html {
   background-image: url("image-fisheye.a15da0c4.jpg");
 }
 
-.footer {
+.section-grid .btn-ftr {
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  height: 4rem;
+  border: 1px solid #000;
+  padding: 1.3rem 4rem;
+  font-family: Alata;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  display: none;
+}
+
+.section-grid .btn-ftr:hover {
+  color: #fff;
   background-color: #000;
-  justify-content: space-around;
-  align-items: center;
+}
+
+@media screen and (max-width: 710px) {
+  .section-grid .btn-ftr {
+    margin-bottom: 9.6rem;
+    display: flex;
+  }
+}
+
+.footer {
   padding-top: 4.4rem;
   padding-bottom: 4.4rem;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 16.5rem;
   display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    padding-inline: 8rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
 }
 
 .footer .logo-box {
@@ -266,6 +405,12 @@ html {
   justify-content: center;
   align-items: flex-start;
   display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  .footer .logo-box {
+    align-items: center;
+  }
 }
 
 .footer .logo-box .footer-logo {
@@ -280,6 +425,19 @@ html {
   gap: 3.2rem;
   list-style-type: none;
   display: flex;
+}
+
+@media screen and (max-width: 930px) {
+  .footer .logo-box ul {
+    gap: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer .logo-box ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer .logo-box ul a {
@@ -302,10 +460,17 @@ html {
 
 .footer .social-box {
   width: auto;
+  height: 8.1rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
   display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  .footer .social-box {
+    align-items: center;
+  }
 }
 
 .footer .social-box .socials-container {
@@ -313,6 +478,13 @@ html {
   gap: 1.6rem;
   margin-bottom: 2.4rem;
   display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  .footer .social-box .socials-container {
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
 }
 
 .footer .social-box .socials-container svg {
@@ -334,6 +506,12 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 2.5rem;
+}
+
+@media screen and (max-width: 760px) {
+  .footer .social-box .p-secondary {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=index.574c7455.css.map */

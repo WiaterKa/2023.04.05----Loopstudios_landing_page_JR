@@ -2,16 +2,30 @@
   padding-top: 16rem;
   padding-bottom: 18.5rem;
 
+  @media screen and (max-width: 1150px) {
+    padding-bottom: 3rem;
+  }
+
   .article-container {
     display: flex;
     position: relative;
     overflow: hidden;
 
+    @media screen and (max-width: 1150px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .article-img-container {
       position: relative;
       z-index: -10;
       width: 88.9rem;
-      height: 50rem;
+      height: 100%;
+
+      @media screen and (max-width: 1150px) {
+        width: auto;
+      }
 
       .article-img {
         object-fit: contain;
@@ -31,6 +45,16 @@
       position: absolute;
       right: 4rem;
       bottom: 0rem;
+
+      @media screen and (max-width: 1150px) {
+        padding: 9.6rem;
+        position: static;
+        height: auto;
+        width: auto;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+      }
 
       .h2-primary {
         font-family: "Josefin Sans";

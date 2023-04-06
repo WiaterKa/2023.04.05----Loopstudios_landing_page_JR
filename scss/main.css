@@ -20,7 +20,6 @@ html {
   padding-inline: 16.5rem;
   position: relative;
 }
-
 .section-hero nav {
   display: flex;
   justify-content: space-between;
@@ -28,14 +27,12 @@ html {
   padding-top: 6rem;
   padding-bottom: 13rem;
 }
-
 .section-hero nav ul {
   display: flex;
   flex-direction: row;
   gap: 3.2rem;
   list-style: none;
 }
-
 .section-hero nav ul a {
   text-decoration: none;
   font-family: "Alata";
@@ -44,12 +41,17 @@ html {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #ffffff;
+  position: relative;
 }
-
+.section-hero nav ul a:hover {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
+  border-radius: 3px;
+  color: white;
+}
 .section-hero nav .hamburger-svg {
   display: none;
 }
-
 .section-hero .h1-hero {
   width: 60rem;
   font-family: "Josefin Sans";
@@ -68,25 +70,27 @@ html {
   padding-top: 16rem;
   padding-bottom: 18.5rem;
 }
-
 .section-article .article-container {
   display: flex;
   position: relative;
   overflow: hidden;
 }
-
+@media screen and (max-width: 1110px) {
+  .section-article .article-container {
+    flex-direction: column;
+  }
+}
 .section-article .article-container .article-img-container {
   position: relative;
   z-index: -10;
   width: 88.9rem;
   height: 50rem;
 }
-
 .section-article .article-container .article-img-container .article-img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   filter: hue-rotate(30deg);
 }
-
 .section-article .article-container .article-txt-box {
   padding-left: 9.6rem;
   padding-top: 9.6rem;
@@ -98,7 +102,6 @@ html {
   right: 4rem;
   bottom: 0rem;
 }
-
 .section-article .article-container .article-txt-box .h2-primary {
   font-family: "Josefin Sans";
   font-style: normal;
@@ -108,7 +111,6 @@ html {
   text-transform: uppercase;
   color: #000000;
 }
-
 .section-article .article-container .article-txt-box .p-primary {
   font-family: "Alata";
   font-style: normal;
@@ -120,3 +122,184 @@ html {
   padding-top: 2.5rem;
   opacity: 0.5;
 }
+
+.section-grid .grid-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-grid .grid-nav .h2-primary {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+.section-grid .grid-nav .btn {
+  font-family: "Alata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 1.3rem 4rem;
+  border: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.section-grid .grid-nav .btn:hover {
+  color: white;
+  background-color: black;
+}
+.section-grid .grid-box {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-bottom: 18rem;
+}
+.section-grid .grid-box .grid {
+  width: 25.6rem;
+  height: 45rem;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3.2rem;
+  padding-left: 4rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.section-grid .grid-box .grid::before {
+  content: " ";
+  opacity: 0.6;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
+.section-grid .grid-box .grid:hover {
+  background-image: white;
+  opacity: 0.3;
+  position: relative;
+  z-index: 10;
+}
+.section-grid .grid-box h3 {
+  position: relative;
+  z-index: 20;
+}
+.section-grid .grid-box .gr1 {
+  background-image: url("../images/desktop/image-deep-earth.jpg");
+}
+.section-grid .grid-box .gr2 {
+  background-image: url("../images/desktop/image-night-arcade.jpg");
+}
+.section-grid .grid-box .gr3 {
+  background-image: url("../images/desktop/image-soccer-team.jpg");
+}
+.section-grid .grid-box .gr4 {
+  background-image: url("../images/desktop/image-grid.jpg");
+}
+.section-grid .grid-box .gr5 {
+  background-image: url("../images/desktop/image-from-above.jpg");
+}
+.section-grid .grid-box .gr6 {
+  background-image: url("../images/desktop/image-pocket-borealis.jpg");
+}
+.section-grid .grid-box .gr7 {
+  background-image: url("../images/desktop/image-curiosity.jpg");
+}
+.section-grid .grid-box .gr8 {
+  background-image: url("../images/desktop/image-fisheye.jpg");
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
+}
+.footer .logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: auto;
+}
+.footer .logo-box .footer-logo {
+  width: 14.4rem;
+  height: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+.footer .logo-box ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  list-style-type: none;
+  gap: 3.2rem;
+}
+.footer .logo-box ul a {
+  text-decoration: none;
+  font-family: "Alata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  padding-top: 2.4rem;
+}
+.footer .logo-box ul a:hover {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
+  border-radius: 3px;
+  color: white;
+}
+.footer .social-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: auto;
+}
+.footer .social-box .socials-container {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.footer .social-box .socials-container svg {
+  color: white;
+  cursor: pointer;
+}
+.footer .social-box .socials-container svg:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .social-box .p-secondary {
+  font-family: "Alata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}/*# sourceMappingURL=main.css.map */

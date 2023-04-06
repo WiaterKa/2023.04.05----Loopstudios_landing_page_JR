@@ -7,6 +7,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 930px) {
+  .section-hero {
+    padding-inline: 8rem;
+  }
+}
+
 .section-hero nav {
   display: flex;
   justify-content: space-between;

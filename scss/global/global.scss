@@ -10,4 +10,8 @@ html {
 
 .content-wrapper {
   padding-inline: 16.5rem;
+
+  @media screen and (max-width: 930px) {
+    padding-inline: 8rem;
+  }
 }

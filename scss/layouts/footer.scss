@@ -1,10 +1,20 @@
 .footer {
   background-color: black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-top: 4.4rem;
   padding-bottom: 4.4rem;
+  padding-inline: 16.5rem;
+
+  @media screen and (max-width: 1000px) {
+    padding-inline: 8rem;
+  }
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
 
   .logo-box {
     display: flex;
@@ -12,6 +22,10 @@
     align-items: flex-start;
     justify-content: center;
     width: auto;
+
+    @media screen and (max-width: 760px) {
+      align-items: center;
+    }
 
     .footer-logo {
       width: 14.4rem;
@@ -25,6 +39,15 @@
       color: white;
       list-style-type: none;
       gap: 3.2rem;
+
+      @media screen and (max-width: 930px) {
+        gap: 1.6rem;
+      }
+
+      @media screen and (max-width: 760px) {
+        flex-direction: column;
+        align-items: center;
+      }
 
       a {
         text-decoration: none;
@@ -50,14 +73,24 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
     width: auto;
+    height: 8.1rem;
+
+    @media screen and (max-width: 760px) {
+      align-items: center;
+    }
 
     .socials-container {
       display: flex;
       gap: 1.6rem;
       justify-content: space-between;
       margin-bottom: 2.4rem;
+
+      @media screen and (max-width: 760px) {
+        justify-content: center;
+        margin-bottom: 1.2rem;
+      }
 
       svg {
         color: white;
@@ -79,6 +112,10 @@
       color: #ffffff;
       mix-blend-mode: normal;
       opacity: 0.5;
+
+      @media screen and (max-width: 760px) {
+        text-align: center;
+      }
     }
   }
 }
