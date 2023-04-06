@@ -435,33 +435,80 @@ html {
   background-image: url("image-deep-earth.0ca7b86b.jpg");
 }
 
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr1 {
+    background-image: url("image-deep-earth.cb5f9686.jpg");
+  }
+}
+
 .section-grid .grid-box .gr2 {
   background-image: url("image-night-arcade.5351f19b.jpg");
 }
 
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr2 {
+    background-image: url("image-night-arcade.a046bcf2.jpg");
+  }
+}
+
 .section-grid .grid-box .gr3 {
   background-image: url("image-soccer-team.0f53fa59.jpg");
-  background-position: top;
+}
+
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr3 {
+    background-image: url("image-soccer-team.c4fff199.jpg");
+  }
 }
 
 .section-grid .grid-box .gr4 {
   background-image: url("image-grid.7f44712a.jpg");
 }
 
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr4 {
+    background-image: url("image-grid.e456397a.jpg");
+  }
+}
+
 .section-grid .grid-box .gr5 {
   background-image: url("image-from-above.78e60b6c.jpg");
+}
+
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr5 {
+    background-image: url("image-from-above.5355aaa7.jpg");
+  }
 }
 
 .section-grid .grid-box .gr6 {
   background-image: url("image-pocket-borealis.02f0c866.jpg");
 }
 
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr6 {
+    background-image: url("image-pocket-borealis.001e9897.jpg");
+  }
+}
+
 .section-grid .grid-box .gr7 {
   background-image: url("image-curiosity.7c51b99a.jpg");
 }
 
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr7 {
+    background-image: url("image-curiosity.808274c2.jpg");
+  }
+}
+
 .section-grid .grid-box .gr8 {
   background-image: url("image-fisheye.a15da0c4.jpg");
+}
+
+@media screen and (max-width: 700px) {
+  .section-grid .grid-box .gr8 {
+    background-image: url("image-fisheye.5b158926.jpg");
+  }
 }
 
 .section-grid .btn-ftr {
