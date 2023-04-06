@@ -16,6 +16,10 @@
     gap: 1.6rem;
   }
 
+  @media screen and (max-width: 500px) {
+    padding-inline: 2.4rem;
+  }
+
   .logo-box {
     display: flex;
     flex-direction: column;

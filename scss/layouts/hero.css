@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .section-hero {
+    padding-inline: 2.4rem;
+  }
+}
+
 .section-hero nav {
   display: flex;
   justify-content: space-between;
@@ -85,6 +91,7 @@
 .section-hero nav ul.active {
   transform: translate(0%);
   display: flex;
+  transition: all 0.3s ease-in;
 }
 
 .section-hero nav .burger {
@@ -137,4 +144,25 @@
   border: 1px solid white;
   padding: 4rem;
   position: absolute;
+}
+
+@media screen and (max-width: 760px) {
+  .section-hero .h1-hero {
+    padding: 2.4rem;
+    font-size: 4rem;
+    line-height: 3.8rem;
+    max-width: 33rem;
+    max-height: 20rem;
+    position: static;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-hero .h1-hero {
+    max-width: 25rem;
+    max-height: 20rem;
+    text-align: center;
+    font-size: 3rem;
+  }
 }

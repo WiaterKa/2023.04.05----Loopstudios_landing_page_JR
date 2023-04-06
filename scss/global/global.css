@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: 0.3s ease-in;
 }
 
 html {
@@ -15,5 +16,11 @@ html {
 @media screen and (max-width: 930px) {
   .content-wrapper {
     padding-inline: 8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-wrapper {
+    padding-inline: 2.4rem;
   }
 }

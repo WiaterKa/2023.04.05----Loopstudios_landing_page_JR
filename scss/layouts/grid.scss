@@ -7,7 +7,7 @@
   .grid-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 
     @media screen and (max-width: 710px) {
@@ -85,6 +85,7 @@
       padding-left: 4rem;
       position: relative;
       transition: 0.3s ease-in-out;
+      cursor: pointer;
 
       @media screen and (max-width: 710px) {
         width: 100%;
