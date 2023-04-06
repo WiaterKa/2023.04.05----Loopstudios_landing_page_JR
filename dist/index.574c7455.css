@@ -76,7 +76,7 @@ html {
     align-items: flex-start;
     gap: 2.4rem;
     padding-top: 16rem;
-    padding-left: 8rem;
+    padding-left: 9.5rem;
     display: none;
     position: absolute;
     top: 0;
@@ -119,6 +119,12 @@ html {
   transition: all .3s ease-in;
   display: flex;
   transform: translate(0%);
+}
+
+@media screen and (max-width: 500px) {
+  .section-hero nav ul.active {
+    padding-left: 3.9rem;
+  }
 }
 
 .section-hero nav .burger {

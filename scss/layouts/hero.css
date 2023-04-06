@@ -52,7 +52,7 @@
     z-index: 100;
     gap: 2.4rem;
     padding-top: 16rem;
-    padding-left: 8rem;
+    padding-left: 9.5rem;
     transform: translate(100%);
     display: none;
   }
@@ -92,6 +92,12 @@
   transform: translate(0%);
   display: flex;
   transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 500px) {
+  .section-hero nav ul.active {
+    padding-left: 3.9rem;
+  }
 }
 
 .section-hero nav .burger {
