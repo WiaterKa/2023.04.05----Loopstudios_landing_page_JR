@@ -42,6 +42,7 @@ html {
 
 @media screen and (max-width: 500px) {
   .section-hero {
+    background-image: url("image-hero.bac91bc1.jpg");
     padding-inline: 2.4rem;
   }
 }
