@@ -27,11 +27,12 @@
           <li><a href="">Products</a></li>
           <li><a href="">Support</a></li>
         </ul>
-        <svg class="hamburger-svg" width="24" height="16" xmlns="http://www.w3.org/2000/svg">
-          <g fill="#FFF" fill-rule="evenodd">
-            <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"></path>
-          </g>
-        </svg>
+
+        <button class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
       </nav>
 
       <h1 class="h1-hero">Immersive experiences that deliver</h1>
@@ -133,5 +134,15 @@
         <p class="p-secondary">© 2021 Loopstudios. All rights reserved.</p>
       </div>
     </section>
+
+    <script>const burgerIcon = document.querySelector(".burger");
+const navRef = document.querySelector("nav");
+const ulRef = navRef.querySelector("ul");
+burgerIcon.addEventListener("click", function() {
+    ulRef.classList.toggle("active");
+    burgerIcon.classList.toggle("active");
+});
+
+</script>
   <script src="/2023.04.05%20-%20Loopos_landing_page_JR.3464ddca.js"></script></body>
 </html>
